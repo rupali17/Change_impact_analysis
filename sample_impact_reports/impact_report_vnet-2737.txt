@@ -1,0 +1,80 @@
+=== VMWARE CHANGE IMPACT ASSESSMENT ===
+
+
+== CASCADING IMPACT ANALYSIS ==
+Original Node: VM-Network-2737
+Total Impacted Nodes: 58
+Cascade Depth: 3
+Worst Impact Category: Low
+
+Impact Levels:
+
+Level 1 - 10 nodes impacted
+Node                           Type                 Impact    
+------------------------------------------------------------
+nsxmgr-4981.nsx.local          NSXManager           Low       
+nsxswitch-4691                 NSXSwitch            Low       
+vm-7789                        VirtualMachine       Low       
+vm-8552                        VirtualMachine       Low       
+vm-9787                        VirtualMachine       Low       
+vm-1851                        VirtualMachine       Low       
+vm-4205                        VirtualMachine       Low       
+vm-3453                        VirtualMachine       Low       
+vm-1561                        VirtualMachine       Low       
+vm-7934                        VirtualMachine       Low       
+
+Level 2 - 26 nodes impacted
+Node                           Type                 Impact    
+------------------------------------------------------------
+VM-Network-1247                VirtualNetwork       Low       
+nsxswitch-9947                 NSXSwitch            Low       
+VLAN526                        VirtualNetwork       Low       
+edge-4596                      NSXEdge              Low       
+Web-Tier-3339                  VirtualNetwork       Low       
+edge-6103                      NSXEdge              Low       
+edge-9837                      NSXEdge              Low       
+vcenter8348.vmware.local       VCenterServer        Low       
+nsxswitch-8809                 NSXSwitch            Low       
+edge-6417                      NSXEdge              Low       
+vcenter3546.vmware.local       VCenterServer        Low       
+VMFS-5000                      Datastore            Low       
+SAN-LUN8431                    Datastore            Low       
+DS8245                         Datastore            Low       
+SAN-LUN1207                    Datastore            Low       
+Local-5306                     Datastore            Low       
+NFS-Vol2079                    Datastore            Low       
+esxi5043.vmware.local          ESXiHost             Low       
+esxi2440.vmware.local          ESXiHost             Low       
+Frontend-9736                  VirtualNetwork       Low       
+SAN-LUN4997                    Datastore            Low       
+SAN-LUN5272                    Datastore            Low       
+Staging-7588                   VirtualNetwork       Low       
+esxi2068.vmware.local          ESXiHost             Low       
+esxi2307.vmware.local          ESXiHost             Low       
+esxi4993.vmware.local          ESXiHost             Low       
+
+Level 3 - 22 nodes impacted
+Node                           Type                 Impact    
+------------------------------------------------------------
+vm-9285                        VirtualMachine       Low       
+vm-5275                        VirtualMachine       Low       
+vm-2205                        VirtualMachine       Low       
+vm-1495                        VirtualMachine       Low       
+vm-3107                        VirtualMachine       Low       
+vm-9248                        VirtualMachine       Low       
+vm-4039                        VirtualMachine       Low       
+vm-3244                        VirtualMachine       Low       
+vm-1771                        VirtualMachine       Low       
+vm-9458                        VirtualMachine       Low       
+Cluster-4409                   VSphereCluster       Low       
+Cluster-1145                   VSphereCluster       Low       
+esxi6515.vmware.local          ESXiHost             Low       
+esxi9526.vmware.local          ESXiHost             Low       
+esxi9642.vmware.local          ESXiHost             Low       
+esxi9335.vmware.local          ESXiHost             Low       
+esxi7451.vmware.local          ESXiHost             Low       
+vm-4690                        VirtualMachine       Low       
+vm-1174                        VirtualMachine       Low       
+esxi5301.vmware.local          ESXiHost             Low       
+esxi5384.vmware.local          ESXiHost             Low       
+vSAN-Cluster-6323              VSANCluster          Low       

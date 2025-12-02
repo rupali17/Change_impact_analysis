@@ -1,0 +1,366 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>VMware Change Impact Assessment</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    h1, h2, h3 { color: #333366; }
+                    .section { margin-bottom: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 5px; }
+                    .critical { background-color: #ffdddd; }
+                    .high { background-color: #ffffcc; }
+                    .medium { background-color: #e6f3ff; }
+                    .low { background-color: #eeffee; }
+                    table { border-collapse: collapse; width: 100%; }
+                    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                    th { background-color: #f2f2f2; }
+                    tr:nth-child(even) { background-color: #f9f9f9; }
+                </style>
+            </head>
+            <body>
+                <h1>VMware Change Impact Assessment</h1>
+            
+                <div class="section">
+                    <h2>Change Details</h2>
+                    <p><strong>Node:</strong> vSAN-Cluster-1518 (VSANCluster)</p>
+                    <p><strong>Change Type:</strong> upgrade</p>
+                    <p><strong>Description:</strong> Upgrade Virtual SAN from 7.0.3 to 8.0.0</p>
+                    <p><strong>Ticket ID:</strong> CHG-20250317-7513</p>
+                    <p><strong>Assessment Time:</strong> 2025-03-17T11:22:44.082252</p>
+                </div>
+                
+                <div class="section low">
+                    <h2>Impact Summary</h2>
+                    <p><strong>Overall Impact:</strong> Low
+                       (Score: 0.3)</p>
+                    <p><strong>Impacted Nodes:</strong> 37</p>
+                    
+                    <h3>Recommendations</h3>
+                    <ul>
+                <li>Follow standard change process</li>
+<li>Document the change</li>
+<li>Verify system functionality after implementation</li>
+<li>Consider breaking down the change into smaller phases</li>
+<li>Create a detailed validation plan for each affected system</li>
+<li>Verify data accessibility and storage policy compliance</li>
+<li>Check cluster health and resynchronization status</li>
+<li>Verify compatibility with all connected systems</li>
+<li>Ensure backups are current before proceeding</li>
+<li>Check vendor documentation for known issues</li>
+
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2>Impacted Nodes</h2>
+                    <table>
+                        <tr>
+                            <th>Node</th>
+                            <th>Type</th>
+                            <th>Relationship</th>
+                            <th>Impact</th>
+                            <th>Score</th>
+                        </tr>
+                
+                        <tr class="low">
+                            <td>Cluster-7341</td>
+                            <td>VSphereCluster</td>
+                            <td>DEPLOYED_ON</td>
+                            <td>Low</td>
+                            <td>0.7</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi6515.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.5</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi5043.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.5</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi4993.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.5</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi2368.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.5</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi8992.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.5</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi6803.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.5</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi2022.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.5</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi7803.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.5</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi7451.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.5</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi8259.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.4</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi9164.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.4</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi9948.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.4</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi3894.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.4</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi1236.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi3186.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi9026.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi9513.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi2583.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi5253.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi7303.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi9526.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi9705.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi9335.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>SAN-LUN8723</td>
+                            <td>Datastore</td>
+                            <td>PROVIDES</td>
+                            <td>Low</td>
+                            <td>0.3</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi5724.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.2</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi2882.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.2</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi2904.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.2</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi5301.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.2</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi6952.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.2</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi3898.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.1</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi2345.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.1</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi2125.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.1</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi8444.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.1</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi6385.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.1</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi7344.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.1</td>
+                        </tr>
+                    
+                        <tr class="low">
+                            <td>esxi2307.vmware.local</td>
+                            <td>ESXiHost</td>
+                            <td>PARTICIPATES_IN</td>
+                            <td>Low</td>
+                            <td>0.1</td>
+                        </tr>
+                    
+                    </table>
+                </div>
+                
+            </body>
+            </html>
+            

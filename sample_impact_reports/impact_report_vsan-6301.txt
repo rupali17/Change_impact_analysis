@@ -1,0 +1,86 @@
+=== VMWARE CHANGE IMPACT ASSESSMENT ===
+
+
+== CASCADING IMPACT ANALYSIS ==
+Original Node: vSAN-Cluster-6301
+Total Impacted Nodes: 61
+Cascade Depth: 3
+Worst Impact Category: Low
+
+Impact Levels:
+
+Level 1 - 17 nodes impacted
+Node                           Type                 Impact    
+------------------------------------------------------------
+DS6123                         Datastore            Low       
+DS6123                         Datastore            Low       
+esxi2068.vmware.local          ESXiHost             Low       
+esxi2307.vmware.local          ESXiHost             Low       
+Cluster-2856                   VSphereCluster       Low       
+DS5368                         Datastore            Low       
+DS5368                         Datastore            Low       
+esxi6515.vmware.local          ESXiHost             Low       
+esxi9526.vmware.local          ESXiHost             Low       
+VMFS-3755                      Datastore            Low       
+VMFS-3755                      Datastore            Low       
+esxi2440.vmware.local          ESXiHost             Low       
+esxi9335.vmware.local          ESXiHost             Low       
+esxi7451.vmware.local          ESXiHost             Low       
+esxi4993.vmware.local          ESXiHost             Low       
+esxi5384.vmware.local          ESXiHost             Low       
+esxi5043.vmware.local          ESXiHost             Low       
+
+Level 2 - 42 nodes impacted
+Node                           Type                 Impact    
+------------------------------------------------------------
+vcenter6729.vmware.local       VCenterServer        Low       
+vcenter3546.vmware.local       VCenterServer        Low       
+vcenter5451.vmware.local       VCenterServer        Low       
+vcenter5728.vmware.local       VCenterServer        Low       
+vcenter8348.vmware.local       VCenterServer        Low       
+esxi9642.vmware.local          ESXiHost             Low       
+vm-1127                        VirtualMachine       Low       
+vm-6734                        VirtualMachine       Low       
+vm-2209                        VirtualMachine       Low       
+vm-1680                        VirtualMachine       Low       
+vm-9401                        VirtualMachine       Low       
+vm-2923                        VirtualMachine       Low       
+Prod-Net-1383                  VirtualNetwork       Low       
+Cluster-4581                   VSphereCluster       Low       
+vMotion                        VirtualNetwork       Low       
+vm-9762                        VirtualMachine       Low       
+vm-2728                        VirtualMachine       Low       
+vm-1286                        VirtualMachine       Low       
+vm-7673                        VirtualMachine       Low       
+DS2550                         Datastore            Low       
+VM-Network-6931                VirtualNetwork       Low       
+SAN-LUN6451                    Datastore            Low       
+Dev-Net-2170                   VirtualNetwork       Low       
+Staging-4912                   VirtualNetwork       Low       
+vm-6394                        VirtualMachine       Low       
+vSAN-DS1656                    Datastore            Low       
+DS9608                         Datastore            Low       
+vm-8225                        VirtualMachine       Low       
+vm-8284                        VirtualMachine       Low       
+DS9054                         Datastore            Low       
+Storage                        VirtualNetwork       Low       
+Test-3146                      VirtualNetwork       Low       
+NFS-Vol3998                    Datastore            Low       
+vm-5110                        VirtualMachine       Low       
+esxi5301.vmware.local          ESXiHost             Low       
+vm-7546                        VirtualMachine       Low       
+vm-4857                        VirtualMachine       Low       
+vm-8069                        VirtualMachine       Low       
+Local-6063                     Datastore            Low       
+vm-9708                        VirtualMachine       Low       
+vm-4546                        VirtualMachine       Low       
+vm-5351                        VirtualMachine       Low       
+
+Level 3 - 5 nodes impacted
+Node                           Type                 Impact    
+------------------------------------------------------------
+nsxmgr-8711.nsx.local          NSXManager           Low       
+nsxmgr-2461.nsx.local          NSXManager           Low       
+Web-Tier-6936                  VirtualNetwork       Low       
+App-Tier-7354                  VirtualNetwork       Low       
+Web-Tier-6463                  VirtualNetwork       Low       
